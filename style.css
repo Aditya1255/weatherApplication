@@ -1,0 +1,310 @@
+/******  Island Moments  ******/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Hind&family=Inspiration&family=Island+Moments&family=Montserrat:wght@100;500&family=Poppins:wght@400;500&family=Quicksand:wght@700&family=Roboto:wght@900&family=Ropa+Sans&family=Secular+One&display=swap');
+
+/******  Charm   ******/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Charm:wght@700&family=Hind&family=Inspiration&family=Island+Moments&family=Montserrat:wght@100;500&family=Poppins:wght@400;500&family=Quicksand:wght@700&family=Roboto:wght@900&family=Ropa+Sans&family=Secular+One&display=swap');
+
+/***** Merienda *****/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Charm:wght@700&family=Hind&family=Inspiration&family=Island+Moments&family=Merienda&family=Montserrat:wght@100;500&family=Poppins:wght@400;500&family=Quicksand:wght@700&family=Roboto:wght@900&family=Ropa+Sans&family=Secular+One&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: -webkit-linear-gradient(360deg, #e9fbcf 10%, #1d7d8e 360%);
+    background: linear-gradient(90deg, #e9fbcf 10%, #1d7d8e 360%);
+}
+
+/******** NAVBAR ********/
+
+
+.navbar {
+    width: 100%;
+    padding: 0rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10rem;
+    background: -webkit-linear-gradient(360deg, #00537E 10%, #3AA17E 360%);
+    background: linear-gradient(360deg, #00537E 10%, #3AA17E 360%);
+    opacity: .7;
+}
+
+.input {
+    width: 30rem;
+    height: 4rem;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.logo {
+    color: #fff;
+    font-size: 7rem;
+    font-family: 'Island Moments';
+}
+
+
+/******* WEATHER CARD ******/
+
+.weather-card {
+    width: 80%;
+    margin: 3rem auto;
+    height: 50rem;
+    background-image: url('bg/1.jpg');
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    -webkit-box-shadow: 4px 5px 9px -2px rgba(0, 0, 0, 0.85);
+    box-shadow: 4px 5px 9px -2px rgba(0, 0, 0, 0.85);
+}
+
+.visibility {
+    width: 80%;
+    height: 50rem;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.45);
+    margin: 1rem auto;
+    position: relative;
+    top: -53rem;
+    overflow-y: hidden;
+}
+
+
+
+
+.current-card {
+    width: 80%;
+    height: 50rem;
+    border-radius: 2rem;
+    margin: 0rem auto;
+    margin-top: -105rem;
+    z-index: 5;
+
+}
+
+
+.cur-card {
+    width: 30rem;
+    padding: 0rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.cur-card img {
+    height: 33rem;
+    width: 33rem;
+    z-index: 7;
+}
+
+.temp-card-cur {
+    margin-top: -8rem;
+    margin-left: 2rem;
+    z-index: 5;
+}
+
+.temp-cur {
+    font-size: 12rem;
+    font-weight: bolder;
+    color: #FCF5F5;
+    font-family: 'Charm';
+    z-index: 7;
+}
+
+.cur-unit {
+    position: relative;
+    top: -7rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FCF5F5;
+    z-index: 7;
+}
+
+.weather-type {
+    font-size: 2rem;
+    font-family: 'Merienda';
+    margin-top: -3rem;
+    z-index: 7;
+    color: #EDEADE;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-top: -1rem;
+}
+
+.city {
+    font-size: 1.8rem;
+    font-weight: bold;
+    z-index: 5;
+    color: #FFDEAD;
+}
+
+.date-time {
+    font-size: 1.6rem;
+    z-index: 5;
+    color: #FFDEAD;
+}
+
+/*** CARD BACKGROUND ***/
+.card-bg {
+    width: 36rem;
+    height: 44rem;
+    margin: 0rem auto;
+    margin-top: -46.8rem;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 2rem;
+    box-shadow: 4px 5px 9px -2px rgba(0, 0, 0, 0.85);
+    z-index: 6;
+}
+
+
+/*** WEATHER FORECAST ***/
+
+.card-forecast {
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 2rem;
+    gap: 2rem;
+    box-shadow: 4px 5px 9px -2px rgba(0, 0, 0, 0.85);
+}
+
+.weather-forecast {
+    width: 80%;
+    margin: 6rem auto;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 0rem auto;
+}
+
+.card-forecast img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.min-max {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    color: #F5F5F5;
+}
+
+.date {
+    color: #fff;
+}
+
+
+@media (max-width:992px) {
+    .navbar {
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .weather-card {
+        height: 55rem;
+    }
+
+    .visibility {
+        height: 55rem;
+        position: relative;
+        top: -58rem !important;
+    }
+
+    .current-card {
+        margin-top: -113rem;
+    }
+
+    .details {
+        margin-top: 4.4rem;
+    }
+
+    .weather-forecast {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:490px) {
+    .navbar {
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .logo {
+        font-size: 9rem;
+    }
+}
+
+@media (max-width:425px) {
+    .weather-card {
+        width: 90%;
+    }
+
+    .visibility {
+        width: 90%;
+    }
+}
+
+@media (max-width:370px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width:270px) {
+    html {
+        font-size: 33%;
+    }
+}
+
+@media (max-width:230px) {
+    html {
+        font-size: 27%;
+    }
+}
+
+@media (max-width:195px) {
+    html {
+        font-size: 22%;
+    }
+}
